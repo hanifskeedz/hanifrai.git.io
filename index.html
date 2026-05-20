@@ -916,21 +916,41 @@
             draw();
         }
 
-        // Menu: warm caramel/gold dots
-        initParticleCanvas(
-            'menuCanvas',
-            100,
-            ['#C8863A', '#E0A855', '#C9A84C', '#D4937A', '#9B6020'],
-            [0.08, 0.20]
-        );
+        // Menu: 9 warm colors, more contrast
+initParticleCanvas(
+    'menuCanvas',
+    260,
+    [
+        '#C8863A', // caramel
+        '#E0A855', // caramel light
+        '#C9A84C', // gold
+        '#D4937A', // rose dust
+        '#9B6020', // caramel dark
+        '#B85C2A', // burnt orange
+        '#E8C87A', // pale gold
+        '#7A3A10', // deep chocolate-brown
+        '#F0B060', // warm amber
+    ],
+    [0.10, 0.28]
+);
 
-        // Contact: denser particles, more visible on warm-white bg
-        initParticleCanvas(
-            'contactCanvas',
-            160,
-            ['#C8863A', '#E0A855', '#C9A84C', '#D4937A', '#9B6020'],
-            [0.08, 0.25]
-        );
+// Contact: 9 warm colors, more visible
+initParticleCanvas(
+    'contactCanvas',
+    260,
+    [
+        '#C8863A', // caramel
+        '#E0A855', // caramel light
+        '#C9A84C', // gold
+        '#D4937A', // rose dust
+        '#9B6020', // caramel dark
+        '#B85C2A', // burnt orange
+        '#E8C87A', // pale gold
+        '#7A3A10', // deep chocolate-brown
+        '#F0B060', // warm amber
+    ],
+    [0.10, 0.32]
+);
 
         // ===== QUOTES =====
         const quotes = [
